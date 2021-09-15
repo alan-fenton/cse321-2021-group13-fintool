@@ -11,6 +11,7 @@
 % DO NOT CHANGE ANYTHING ELSE <============================
 %==========================================================
 \documentclass[12pt]{article}
+\usepackage{graphicx}
 %========================
 \def\cdate{{Fall 2021}}
 %========================
@@ -170,7 +171,7 @@ The ability to access multiple accounts and view combined analytics.
 
 
 
-\begin{table}[h]
+\begin{table}[!h]
 \begin{tabular}{|
 >{\columncolor[HTML]{FFFFFF}}l |
 >{\columncolor[HTML]{FFFFFF}}c |
@@ -234,6 +235,7 @@ Personal users, for the most part have one or two credit/debit accounts, and usu
 \subsubsection{Business Users}
 By contrast, business users tend to have several credit/debit accounts, 3 or more, and are likely to want to make use of the more complex features, such as account aggregation.\\
 \subsection{Design Prototype:}
+\subsubsection{First Time Setup}
 \includegraphics[width=3in]{HomePage.png}\\
 This is the page users will land on when thy search for our site. If you already have an account you simply need to sign in, if you don't you need to register.\\
 
@@ -241,19 +243,34 @@ This is the page users will land on when thy search for our site. If you already
 New users add their email address to create an account, choose whether is a personal or business account. This changes the default budgets and tags when the account is first created.\\
 
 \includegraphics[width=3in]{first_time_add_bank_accounts.jpg}\\
-The second step of account creation is adding the users financial accounts.
+The final step of account creation is adding the users financial accounts.\\
 
-\includegraphics[width=3in]{your_accounts_page.jpg}\\
-The users can view their accounts in aggregate and also add new accounts if they are created.\\
 
-\includegraphics[width=3in]{BudgetPage.png}\\
-This is the page users will land on when they get done with registering or when they sign in. Here they can add and edit their budgets and add transactions.\\
+\subsubsection{Budget View}
+\includegraphics[width=3in]{BudgetPagePersonal.png}
+\includegraphics[width=3in]{BudgetPageBusiness.png}\\
+This is the page users will land on when they get done with registering or when they sign in. On the left is the personal version and on the right is the business version. The main difference between the two are the default tags. Here they can add and edit their budgets and add transactions.\\
+
+\includegraphics[width=3in]{BudgetPageEditPushed.png}
+\includegraphics[width=3in]{BudgetPageAddPushed.png}\\
+When the edit button (next to a budget) is pushed, the fields for the name of the budget, the tags, and the totals become editable. When the add button is pushed a new budget is added to the top of the budget view and the fields are editable by default. When the done button is pushed the fields become finalized.\\
+
+\includegraphics[width=3in]{BudgetPageWarning.png}\\
+When the delete button is pushed a warning will be shown to the user. If the user accepts then the budget, along with it's tags, are deleted. Transactions are moved to a budget called "other".\\
 
 \includegraphics[width=3in]{BudgetPageWithMenu.png}\\
 This shows the various popups that the page will have. Pushing the add transaction button will prompt the user to add in a transaction. Pushing the menu in the top left will show the user different pages they can go to.\\
 
+\subsubsection{Account View}
+\includegraphics[width=3in]{your_accounts_page.jpg}\\
+The users can view their accounts in aggregate and also add new accounts if they are created.\\
+\includegraphics[width=3in]{edit_your_accounts_page.jpg}
+\includegraphics[width=3in]{delete_accounts_page.jpg}\\
+From the "Your Accounts" page users can edit an existing account, or delete accounts because they have closed the account or were removed from it.\\
+
+\subsubsection{Stats View}
 \includegraphics[width=3in]{StatsPage.png}\\
-This page shows a breakdown of how much the user has been spending and shows the spending habits of the user.\\
+This page shows a breakdown of how much the user has been spending and shows the spending habits of the user. Note the dropdown menu up top, this is used to select what time period you'd like to look at, 1 month, 3 months, a year, or all time. The table below shows all transactions, and is default sorted by the name of the transaction, but you can click on the headings to either sort by those headings, or click a heading twice to switch to reverse sorting by that heading.\\
 %==========================================================
 \end{document}
 %==========================================================
