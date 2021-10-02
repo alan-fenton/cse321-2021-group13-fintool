@@ -1,0 +1,36 @@
+header{
+    border: 10px solid;
+}
+nav.mainNav{
+    border: 10px solid;
+    border-top: 0px;
+    height: 42px;
+}
+.mainNav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainNav ul li{
+    float: left;
+    padding: 12px;
+}
+.mainNav ul li:hover{
+    background-color: blue;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section.infoContainer{
+    border: 10px solid;
+    border-top: 0px;
+}
+
+.infoContainer > h3:first-child{
+    margin-top: 0px;
+}
