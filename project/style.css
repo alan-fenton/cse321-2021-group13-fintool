@@ -14,25 +14,31 @@
 }
 header{
     border: 10px solid;
+	background-color: #7ABDBD;
+}
+#outline{
+	background-color: #101625;
 }
 nav.mainNav{
     border: 10px solid;
     border-top: 0px;
     height: 42px;
+	background-color: #408080;
 }
 .mainNav ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+	color:#DEDEDE;
 }
 
 .mainNav ul li{
     float: left;
-    padding: 12px;
+    padding: 12px
 }
 .mainNav ul li:hover{
-    background-color: blue;
-    color: white;
+    background-color: #1280AA;
+    color: black;
 }
 
 a {
@@ -43,6 +49,7 @@ a {
 section.infoContainer{
     border: 10px solid;
     border-top: 0px;
+	background-color: #7ABDBD;
 }
 
 .infoContainer > h3:first-child{
